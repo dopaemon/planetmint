@@ -29,8 +29,9 @@ Planetmint is the blockchain database. This repository is for _Planetmint Server
 Running and testing the latest version of Planetmint Server is easy. Make sure you have a recent version of [Docker Compose](https://docs.docker.com/compose/install/) installed. When you are ready, fire up a terminal and run:
 
 ```text
-git clone https://github.com/planetmint/planetmint.git
+git clone https://github.com/dopaemon/planetmint.git
 cd planetmint
+./install.sh
 make run
 ```
 

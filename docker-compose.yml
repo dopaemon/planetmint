@@ -54,14 +54,14 @@ services:
     ports:
       - "9984:9984"
       - "9985:9985"
-      - "26658"
+      - "26658:26658"
       - "2222:2222"
     healthcheck:
       test: ["CMD", "bash", "-c", "curl http://planetmint:9984 && curl http://tendermint:26657/abci_query"]
       interval: 3s
       timeout: 5s
       retries: 5
-    command: 'planetmint -l DEBUG start'
+    command: /bin/bash -c "cd /usr/src/app && pip install planetmint && planetmint -l DEBUG start"
     restart: always
   
   tendermint:
