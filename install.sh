@@ -14,5 +14,5 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo apt-get update -yq
-sudo apt-get install docker-ce docker-ce-cli containerd.io -yq
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose -yq
 sudo systemctl enable docker.service
